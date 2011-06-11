@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in webmock-disable.gemspec
+# Specify your gem's dependencies in webmock-disabler.gemspec
 gemspec

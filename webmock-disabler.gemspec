@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "webmock/disable/version"
+require "webmock/disabler/version"
 
 Gem::Specification.new do |s|
-  s.name        = "webmock-disable"
-  s.version     = Webmock::Disable::VERSION
+  s.name        = "webmock-disabler"
+  s.version     = WebMock::Disabler::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Danny Burkes"]
   s.email       = ["dburkes@netable.com"]
-  s.homepage    = %q{http://github.com/dburkes/webmock-disable}
+  s.homepage    = %q{http://github.com/dburkes/webmock-disabler}
   s.summary     = %q{Disable and re-enable WebMock with ease}
   s.description = %q{Disable and re-enable WebMock with ease}
 
