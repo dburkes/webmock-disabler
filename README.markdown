@@ -1,6 +1,8 @@
 #webmock-disabler
 webmock-disabler is a gem that allows users of [WebMock](https://github.com/bblimke/webmock) to disable and re-enable WebMock on-demand. This is useful in testing scenarios where the mere presence of WebMock causes some tests to fail. A common case is that the presence of WebMock is known to cause failures in Selenium-based integration tests, such as RSpec's request specs and Cucumber features.
 
+The blog post introducing webmock-disabler is [here](https://pivotallabs.com/users/danny/blog/articles/1743-making-webmock-selenium-and-webdriver-play-nicely).
+
 #Installation
     gem install webmock-disabler
 or, if you use Bundler
