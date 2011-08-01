@@ -43,3 +43,22 @@ In your spec_helper.rb:
     after(:each), :type => :request do
       WebMock.enable!
     end
+
+#Usage with Cucumber / Rails
+
+You can create a tag to run a particular feature with WebMock disabled.
+
+Create webmock_disabler.rb in your features/support directory:
+
+    require 'webmock'
+    require 'webmock/disabler'
+
+    Before('@nowebmock') do
+      WebMock.disable!
+    end
+
+    After('@nowebmock') do
+      WebMock.enable!
+    end
+
+Then tag any feature where you want to disable WebMock with '@nowebmock'
