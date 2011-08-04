@@ -21,7 +21,7 @@ I have no plans to implement support for other HTTP libraries, but I do have pla
 
 #Usage
     require 'webmock'
-    require 'webmock-disabler'
+    require 'webmock/disabler'
 
     Net::HTTP.get(URI.parse('http://www.google.com')) => raises WebMock::NetConnectNotAllowedError
 
